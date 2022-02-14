@@ -28,7 +28,7 @@ number 3, add the next numbers).*/
 
 //Solution 2 (object) with Explanation:
 
-ar twoSum = function(nums, target) {
+var twoSum = function(nums, target) {
     let hash = {};
 
 /*create a object (note 2) and utilize object's property value and
