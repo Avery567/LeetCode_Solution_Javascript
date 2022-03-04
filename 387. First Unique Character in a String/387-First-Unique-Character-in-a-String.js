@@ -38,3 +38,23 @@ var firstUniqChar = function(s) {
 //if such index doesn't exist, return -1
 
 };
+
+//Solution 2:
+var firstUniqChar = function(s) {
+    for(i=0; i<s.length; i++)
+
+//Loop (note 1) through string 's' and see if there is more than
+//once index for a character.
+
+        if(s.indexOf(s[i])===s.lastIndexOf(s[i])) return i
+
+//if the first index (note 7) and last index (note 8) found for a
+//character is the same, that means this character is unique. If
+//this character is found at more than one index, there are
+//duplicates of this character in the string.
+
+    return -1
+
+//if such index doesn't exist, return -1
+
+};
